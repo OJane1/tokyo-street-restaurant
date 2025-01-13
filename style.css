@@ -1,0 +1,289 @@
+body {
+    background-color: #B7412A;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav {
+    font-family: 'Hachi Maru Pop', cursive;    
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 70px;
+    align-self: center;
+    height: 100%;
+    margin-top: 40vh;
+}
+
+h2, .footer {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 25px; 
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 50px;
+}
+
+.item {
+    width: 250px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    margin: 50px;
+    z-index: -1;
+}
+
+.one {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/deepfried.jpeg?v=1697952271919");
+}
+
+.two {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/bottles.jpeg?v=1697952257037");
+}
+
+.three {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/lanterns.jpeg?v=1697952281467");
+}
+
+.four {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/lanterns.jpeg?v=1697952281467");
+}
+
+.five {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/rolls.jpeg?v=1697952426139");
+}
+
+.six {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/sake.jpeg?v=1697952438413");
+}
+
+.seven {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/samurai.jpeg?v=1697952456670");
+}
+
+.eight {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/tokyo.jpg?v=1697952530010");
+}
+
+.nine {
+    background-image: url("https://cdn.glitch.global/4769546c-c0eb-4805-b3b5-1bf8a0aed3b2/types-sushi.jpeg?v=1697952532361");
+}
+
+.newClass {
+    background-color: #EBDFC6;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBDFC6;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu-card {
+    margin: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+button {
+    background-color: #B7412A;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    align-self: center;
+    height: fit-content;
+
+}
+
+#name {
+    background-color: #B7412A;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 25px; 
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#description, .description {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Playpen Sans', cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    margin-top: 100px;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .main-page {
+    width: auto;
+  }
+  
+  h1 {
+        font-size: 40px;
+    }
+  
+  .item {
+        margin: 15px;
+        width: 150px;
+        height: 200px;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .menu-card {
+        max-width: 100%;
+    }
+
+    #description, .description {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+  
+  .footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    max-height: 100vh;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+    body {
+    overflow-x: hidden;
+  }
+  
+    nav {
+        padding: 8px 10px;
+    }
+
+    h2, .footer, #name {
+        font-size: 16px;
+    }
+
+  .menu-card {
+    margin: 2px;
+  }
+  
+  img, .map {
+    width: 250px;
+  }
+  
+  .footer {
+    max-height: 100vh;
+  }
+}
+
+@media all and (max-width: 300px) {
+    body {
+    overflow-x: hidden;
+  }
+  
+    .navigation {
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+  
+  .menu-wrapper {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-page {
+    padding-top: 10px;
+  }
+  
+  .menu-card {
+    max-width: 300px;
+    margin: 0;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+}
+
+
